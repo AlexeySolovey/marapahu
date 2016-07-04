@@ -36,6 +36,10 @@ ul{
 .container{
 	max-width: 1030px;
 }
+.calculator, .list, .people, .target, .cogwheel{
+	background: url(../images/sprites.png) no-repeat;
+}
+
 /*****************************
 			header
 *****************************/
@@ -174,31 +178,35 @@ section.navigation{
 section#main_slider{
 	.carousel-inner{
 		.item{
-			.carousel-caption{
-				background: rgba(0,0,0,.3);
-				padding:37px;
-				right: 0;
-				left: 15px;
-				text-align: left;
-				top:103px;
-				width: 433px;
-				height: 245px;
-				border-radius: 28px;
-				p{
-					font-size: 33px;
-					&:first-child{
-						font-size:40px;
-						margin-bottom: 1px;
+			border-bottom: 2px solid @orange;
+			.container{
+				margin-top: -1px;
+				.carousel-caption{
+					background: rgba(0,0,0,.3);
+					padding:37px;
+					right: 0;
+					left: 15px;
+					text-align: left;
+					top:103px;
+					width: 433px;
+					height: 245px;
+					border-radius: 28px;
+					p{
+						font-size: 33px;
+						&:first-child{
+							font-size:40px;
+							margin-bottom: 1px;
+						}
 					}
-				}
-				button{
-					background: @orange;
-					border: 0;
-					margin-top: 10px;
-					padding: 4px 12px;
-					font-size: 17px;
-					&:hover{
-						color:@color_hover;
+					button{
+						background: @orange;
+						border: 0;
+						margin-top: 10px;
+						padding: 4px 12px;
+						font-size: 17px;
+						&:hover{
+							color:@color_hover;
+						}
 					}
 				}
 			}
@@ -208,39 +216,110 @@ section#main_slider{
 /*****************************
 		services
 *****************************/
+section.services{
+	text-align: center;
+	h2{
+		font-size: 35px;
+		padding-top: 8px;
+		padding-bottom: 25px;
+	}
+	.service-item{
+		height: 315px;
+		overflow-y: hidden;
+		margin-bottom: 13px;
+		h3{
+			font-size: 17px;
+			line-height: 1.2;
+		}
+		p{
+			padding: 0 3px;
+			font-size: 15.5px;
+			line-height: 1.2;
+		}
+		div.service-img{
+			text-align: center;
+			.calculator{
+				background-position: 0 0;
+				width: 84px;
+				height: 98px;
+				display: block;
+				margin:0 auto;
+				&:hover{
+					background-position: -79px 0;
+				}
+			}
+			.list{
+				background-position: -167px -4px;
+				width: 101px;
+				height: 98px;
+				display: block;
+				margin:0 auto;
+				&:hover{
+					background-position: -265px -3px;
+				}
+			}
+			.people{
+				background-position: -368px 0;
+				width: 100px;
+				height: 98px;
+				display: block;
+				margin:0 auto;
+				&:hover{
+					background-position: -468px 0;
+				}
+			}
+			.target{
+				background-position: 0 -97px ;
+				width: 88px;
+				height: 98px;
+				display: block;
+				margin:0 auto;
+				&:hover{
+					background-position: -93px -99px ;
+				}
+			}
+			.cogwheel{
+				background-position: -184px -96px ;
+				width: 99px;
+				height: 98px;
+				margin:0 auto;
+				display: block;
+				&:hover{
+					background-position: -279px -98px;
+				}
+			}
+		}
+	}
+}
+
 /*****************************
-		mini slider
+		img_block
 *****************************/
-section#mini_slider{
-	.carousel-inner{
-		.item{
-			.carousel-caption{
-				background: rgba(0,0,0,.3);
-				padding:37px;
-				right: 0;
-				left: 15px;
-				text-align: left;
-				top:103px;
-				width: 433px;
-				height: 245px;
-				border-radius: 28px;
-				p{
-					font-size: 33px;
-					&:first-child{
-						font-size:40px;
-						margin-bottom: 1px;
-					}
-				}
-				button{
-					background: @orange;
-					border: 0;
-					margin-top: 10px;
-					padding: 4px 12px;
-					font-size: 17px;
-					&:hover{
-						color:@color_hover;
-					}
-				}
+section.img_block{
+	background: url(../images/img_block.jpg);
+	color: #fff;
+	.info_block{
+		background: rgba(0,0,0,.3);
+		padding:37px;
+		text-align: left;
+		width: 433px;
+		height: 245px;
+		border-radius: 28px;
+		p{
+			font-size: 33px;
+			&:first-child{
+				font-size:40px;
+				margin-bottom: 1px;
+			}
+		}
+		button{
+			background: @orange;
+			border: 0;
+			margin-top: 10px;
+			padding: 4px 12px;
+			font-size: 17px;
+			&:hover{
+				color:@color_hover;
 			}
 		}
 	}

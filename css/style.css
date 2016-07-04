@@ -41,6 +41,13 @@ ul li {
 .container {
   max-width: 1030px;
 }
+.calculator,
+.list,
+.people,
+.target,
+.cogwheel {
+  background: url(../images/sprites.png) no-repeat;
+}
 /*****************************
 			header
 *****************************/
@@ -171,7 +178,13 @@ section.navigation .navbar #responsive-menu ul.navbar-nav li a:hover {
 /*****************************
 		main slider
 *****************************/
-section#main_slider .carousel-inner .item .carousel-caption {
+section#main_slider .carousel-inner .item {
+  border-bottom: 2px solid #ff6501;
+}
+section#main_slider .carousel-inner .item .container {
+  margin-top: -1px;
+}
+section#main_slider .carousel-inner .item .container .carousel-caption {
   background: rgba(0, 0, 0, 0.3);
   padding: 37px;
   right: 0;
@@ -182,55 +195,131 @@ section#main_slider .carousel-inner .item .carousel-caption {
   height: 245px;
   border-radius: 28px;
 }
-section#main_slider .carousel-inner .item .carousel-caption p {
+section#main_slider .carousel-inner .item .container .carousel-caption p {
   font-size: 33px;
 }
-section#main_slider .carousel-inner .item .carousel-caption p:first-child {
+section#main_slider .carousel-inner .item .container .carousel-caption p:first-child {
   font-size: 40px;
   margin-bottom: 1px;
 }
-section#main_slider .carousel-inner .item .carousel-caption button {
+section#main_slider .carousel-inner .item .container .carousel-caption button {
   background: #ff6501;
   border: 0;
   margin-top: 10px;
   padding: 4px 12px;
   font-size: 17px;
 }
-section#main_slider .carousel-inner .item .carousel-caption button:hover {
+section#main_slider .carousel-inner .item .container .carousel-caption button:hover {
   color: #d7d7d7;
 }
 /*****************************
 		services
 *****************************/
+section.services {
+  text-align: center;
+}
+section.services h2 {
+  font-size: 35px;
+  padding-top: 8px;
+  padding-bottom: 25px;
+}
+section.services .service-item {
+  height: 315px;
+  overflow-y: hidden;
+  margin-bottom: 13px;
+}
+section.services .service-item h3 {
+  font-size: 17px;
+  line-height: 1.2;
+}
+section.services .service-item p {
+  padding: 0 3px;
+  font-size: 15.5px;
+  line-height: 1.2;
+}
+section.services .service-item div.service-img {
+  text-align: center;
+}
+section.services .service-item div.service-img .calculator {
+  background-position: 0 0;
+  width: 84px;
+  height: 98px;
+  display: block;
+  margin: 0 auto;
+}
+section.services .service-item div.service-img .calculator:hover {
+  background-position: -79px 0;
+}
+section.services .service-item div.service-img .list {
+  background-position: -167px -4px;
+  width: 101px;
+  height: 98px;
+  display: block;
+  margin: 0 auto;
+}
+section.services .service-item div.service-img .list:hover {
+  background-position: -265px -3px;
+}
+section.services .service-item div.service-img .people {
+  background-position: -368px 0;
+  width: 100px;
+  height: 98px;
+  display: block;
+  margin: 0 auto;
+}
+section.services .service-item div.service-img .people:hover {
+  background-position: -468px 0;
+}
+section.services .service-item div.service-img .target {
+  background-position: 0 -97px;
+  width: 88px;
+  height: 98px;
+  display: block;
+  margin: 0 auto;
+}
+section.services .service-item div.service-img .target:hover {
+  background-position: -93px -99px;
+}
+section.services .service-item div.service-img .cogwheel {
+  background-position: -184px -96px;
+  width: 99px;
+  height: 98px;
+  margin: 0 auto;
+  display: block;
+}
+section.services .service-item div.service-img .cogwheel:hover {
+  background-position: -279px -98px;
+}
 /*****************************
-		mini slider
+		img_block
 *****************************/
-section#mini_slider .carousel-inner .item .carousel-caption {
+section.img_block {
+  background: url(../images/img_block.jpg);
+  color: #fff;
+}
+section.img_block .info_block {
   background: rgba(0, 0, 0, 0.3);
   padding: 37px;
-  right: 0;
-  left: 15px;
   text-align: left;
-  top: 103px;
   width: 433px;
   height: 245px;
   border-radius: 28px;
 }
-section#mini_slider .carousel-inner .item .carousel-caption p {
+section.img_block .info_block p {
   font-size: 33px;
 }
-section#mini_slider .carousel-inner .item .carousel-caption p:first-child {
+section.img_block .info_block p:first-child {
   font-size: 40px;
   margin-bottom: 1px;
 }
-section#mini_slider .carousel-inner .item .carousel-caption button {
+section.img_block .info_block button {
   background: #ff6501;
   border: 0;
   margin-top: 10px;
   padding: 4px 12px;
   font-size: 17px;
 }
-section#mini_slider .carousel-inner .item .carousel-caption button:hover {
+section.img_block .info_block button:hover {
   color: #d7d7d7;
 }
 /*****************************
