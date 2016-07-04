@@ -371,6 +371,7 @@ section.img_block{
 			propose
 *****************************/
 section.propose{
+        margin-bottom: 30px;
 	h2{
 		margin:30px 0px;
 	}
@@ -383,7 +384,10 @@ section.propose{
 		 height: 225px;
 		 overflow: hidden;
 		 &:hover .order{
-			-webkit-transform: translateY(-120px);
+            -webkit-transform: translateY(-120px);
+            -moz-transform: translateY(-120px);
+            -o-transform: translateY(-120px);
+             transform: translateY(-120px);
 		 }
 		 .info_block{
 			position: relative;
@@ -453,12 +457,12 @@ footer{
 	background: @orange;
 	margin-top: 30px;
 	color: #fff;
-    margin-top:20px;
+    /*margin-top:20px;*/
     .footer-column{
         margin:20px 0;
         text-align:center;
         p{
-            margin-bottom: 3px;
+            margin-bottom: 10px;
         }
         ul{
             width: 100%;
@@ -487,13 +491,25 @@ footer{
                     font-size: 22px;
                 }
                 .fa-email{
+                    float: left;
                     padding-top: 0;
                     font-size: 22px;
                     padding-right: 1px;
-                    margin-left: 17px;
+                    margin-left: 35px;
                     background-color:transparent;
                     color:white;
                 }
+            }
+        }
+    }
+    .footer-social{
+        padding-top: 16px;
+        ul{
+            padding-left: 41%;
+            padding-top: 10px;
+            a{
+                display:inline-block;
+                float:left;
             }
         }
     }
@@ -512,31 +528,26 @@ footer{
     padding:3px 0 30px 0;
 }
   .contacts-profile{
-      padding: 0px 0px 26px 50px;
+      margin-top: 20px;
+      text-align: center;
         img{
-            width: 70%;
+            width: 100%;
             margin-bottom:15px;
         }
         span{
             font-size: 16px;
         }
         ul{
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
             padding-left: 18px;
             margin-top:15px;
             li{
+                float: left;
                 margin-bottom:10px;
                 i{
                     font-size: 22px;
-                    margin-right: 10px;
-                }
-                .fa-twitter{
-                    padding: 0 3px 0 0;
-                    margin-right: 1px;
-                    font-size: 20px;
-                }
-                .fa-vk{
-                    font-size: 19px;
-                    margin-right: 2px
                 }
                 a{
                     text-decoration:none;
@@ -546,12 +557,16 @@ footer{
                     color:@color_hover;
                 }
                 .contacts-icon{
+                    float: left;
                     margin-right:10px;
                     border-radius: 20px;
                     display: inline-block;
-                    padding: 6px 6px 4px 9px;
+                    padding: 9px 7px 6px 9px;
                     background-color: @orange;
                     color:white;
+                }
+                .icon-fb{
+                    padding: 9px 10px 6px 17px;
                 }
             }
         }
@@ -631,6 +646,25 @@ aside{
     header .phones {
     margin-left: auto; 
     }
+
+
+		#responsive-menu{
+			ul{
+
+				&.navbar-nav{
+					li{
+						padding:5px 15px !important;
+                        }
+                    }
+                }
+            }
+    footer .footer-column ul li .fa-email {
+    float:none;
+    margin-left: 28px;
+    }
+    footer .footer-social ul {
+    padding-left: 44%;
+    }
 }
 @media screen and (max-width: 768px){
 	/*
@@ -639,6 +673,9 @@ aside{
 		padding-right: 25px;
 	} 
 	*/
+        footer .footer-social ul {
+    padding-left: 42%;
+    }
 }
 @media screen and (min-width: 768px){
 	

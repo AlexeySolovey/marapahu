@@ -361,6 +361,9 @@ section.img_block .info_block button:hover {
 /*****************************
 			propose
 *****************************/
+section.propose {
+  margin-bottom: 30px;
+}
 section.propose h2 {
   margin: 30px 0px;
 }
@@ -375,6 +378,9 @@ section.propose .slide {
 }
 section.propose .slide:hover .order {
   -webkit-transform: translateY(-120px);
+  -moz-transform: translateY(-120px);
+  -o-transform: translateY(-120px);
+  transform: translateY(-120px);
 }
 section.propose .slide .info_block {
   position: relative;
@@ -438,14 +444,14 @@ footer {
   background: #ff6501;
   margin-top: 30px;
   color: #fff;
-  margin-top: 20px;
+  /*margin-top:20px;*/
 }
 footer .footer-column {
   margin: 20px 0;
   text-align: center;
 }
 footer .footer-column p {
-  margin-bottom: 3px;
+  margin-bottom: 10px;
 }
 footer .footer-column ul {
   width: 100%;
@@ -476,12 +482,24 @@ footer .footer-column ul li .fa-smart-phone {
   font-size: 22px;
 }
 footer .footer-column ul li .fa-email {
+  float: left;
   padding-top: 0;
   font-size: 22px;
   padding-right: 1px;
-  margin-left: 17px;
+  margin-left: 35px;
   background-color: transparent;
   color: white;
+}
+footer .footer-social {
+  padding-top: 16px;
+}
+footer .footer-social ul {
+  padding-left: 41%;
+  padding-top: 10px;
+}
+footer .footer-social ul a {
+  display: inline-block;
+  float: left;
 }
 /*****************************
 *****************************/
@@ -495,34 +513,29 @@ footer .footer-column ul li .fa-email {
   padding: 3px 0 30px 0;
 }
 .contacts-profile {
-  padding: 0px 0px 26px 50px;
+  margin-top: 20px;
+  text-align: center;
 }
 .contacts-profile img {
-  width: 70%;
+  width: 100%;
   margin-bottom: 15px;
 }
 .contacts-profile span {
   font-size: 16px;
 }
 .contacts-profile ul {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 18px;
   margin-top: 15px;
 }
 .contacts-profile ul li {
+  float: left;
   margin-bottom: 10px;
 }
 .contacts-profile ul li i {
   font-size: 22px;
-  margin-right: 10px;
-}
-.contacts-profile ul li .fa-twitter {
-  padding: 0 3px 0 0;
-  margin-right: 1px;
-  font-size: 20px;
-}
-.contacts-profile ul li .fa-vk {
-  font-size: 19px;
-  margin-right: 2px;
 }
 .contacts-profile ul li a {
   text-decoration: none;
@@ -532,12 +545,16 @@ footer .footer-column ul li .fa-email {
   color: #d7d7d7;
 }
 .contacts-profile ul li .contacts-icon {
+  float: left;
   margin-right: 10px;
   border-radius: 20px;
   display: inline-block;
-  padding: 6px 6px 4px 9px;
+  padding: 9px 7px 6px 9px;
   background-color: #ff6501;
   color: white;
+}
+.contacts-profile ul li .icon-fb {
+  padding: 9px 10px 6px 17px;
 }
 .contacts-container {
   padding-bottom: 40px;
@@ -598,6 +615,16 @@ aside .contacts-aside {
   header .phones {
     margin-left: auto;
   }
+  #responsive-menu ul.navbar-nav li {
+    padding: 5px 15px !important;
+  }
+  footer .footer-column ul li .fa-email {
+    float: none;
+    margin-left: 28px;
+  }
+  footer .footer-social ul {
+    padding-left: 44%;
+  }
 }
 @media screen and (max-width: 768px) {
   /*
@@ -606,4 +633,7 @@ aside .contacts-aside {
 		padding-right: 25px;
 	} 
 	*/
+  footer .footer-social ul {
+    padding-left: 42%;
+  }
 }
