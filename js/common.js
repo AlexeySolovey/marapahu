@@ -14,11 +14,11 @@
 		  });
 	});
 
-	$('.tour').hover(
-    function () {
-        $(".order").css("display", "block");
-    },
-    function () {
-        $(".order").css("display", "none");
-});
+//	$('.tour').hover(
+//    function () {
+//        $(".order").css("display", "block");
+//    },
+//    function () {
+//        $(".order").css("display", "none");
+//});
 })(jQuery)
