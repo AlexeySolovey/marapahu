@@ -13,4 +13,12 @@
 		    slideMargin: 10
 		  });
 	});
+
+	$('.tour').hover(
+    function () {
+        $(".order").css("display", "block");
+    },
+    function () {
+        $(".order").css("display", "none");
+});
 })(jQuery)

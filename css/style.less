@@ -46,7 +46,11 @@ ul{
 header{
 	padding-top: 20px;
 	.social{
-		margin-left: 39px;
+        text-align: center;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+		/*margin-left: 39px;*/
 		padding-top: 31px;
 		p{
 			font-family: @FGM-regular;
@@ -54,7 +58,14 @@ header{
 			font-size: 18px;
 			margin-bottom: 7px;
 		}
-		ul a{
+		ul{
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 10px;
+		    } 
+        a{
+            display: inline-block;
 			text-decoration: none;
 			li{
 				background: @orange;
@@ -84,6 +95,8 @@ header{
 			}
 		}
 		button{
+            width: 97%;
+            margin-left: 3px;
 			background: @orange;
 			border: 0;
 			color: #fff;
@@ -98,7 +111,11 @@ header{
 		}
 	}
 	.logo{
-		margin-left: 44px;
+		/*margin-left: 44px;*/
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 30px;
 	}
 	.phones{
 		padding-top: 23px;
@@ -124,6 +141,7 @@ header{
 					background: #ff6501;
 					margin-right: 2px;
 					font-size: 18px;
+                    color: white;
 				}
 			}
 		}
@@ -179,6 +197,13 @@ section#main_slider{
 	.carousel-inner{
 		.item{
 			border-bottom: 2px solid @orange;
+            .carousel-img{
+                width:100%;
+                height:560px;
+                background:url(../images/main_slider1.jpg) no-repeat center;
+                background-size:cover;
+                
+            }
 			.container{
 				margin-top: -1px;
 				.carousel-caption{
@@ -213,11 +238,13 @@ section#main_slider{
 		}
 	}
 }
+
 /*****************************
 		services
 *****************************/
 section.services{
 	text-align: center;
+    margin-bottom:25px;
 	h2{
 		font-size: 35px;
 		padding-top: 8px;
@@ -296,17 +323,21 @@ section.services{
 		img_block
 *****************************/
 section.img_block{
-	background: url(../images/img_block.jpg);
+	background: url(../images/img_block.jpg) no-repeat center;
+    background-size:cover;
 	color: #fff;
+    margin-top:20px;
+    border-top:2px solid @orange;
+    border-bottom:2px solid @orange;
 	.info_block{
 		background: rgba(0,0,0,.3);
-		padding:37px;
+		padding: 25px 50px;
+        margin: 45px 0;
 		text-align: left;
 		width: 433px;
-		height: 245px;
 		border-radius: 28px;
 		p{
-			font-size: 33px;
+			font-size: 32px;
 			&:first-child{
 				font-size:40px;
 				margin-bottom: 1px;
@@ -328,7 +359,42 @@ section.img_block{
 			propose
 *****************************/
 section.propose{
-
+    h2{
+        margin:30px 0px;
+    }
+    .tour{
+         padding: 1px;
+         text-align: center;
+         border:1px solid @orange;
+         margin-bottom:20px;
+         cursor:pointer;
+         img{
+             width:100%;
+         }
+         h3{
+            margin: 10px 0 5px 0;
+         }
+         .tour-info{
+            padding: 0px 70px;
+            
+         }
+         .order{
+                 padding: 32px 103px;
+                font-size: 26px;
+                display: none;
+                position: absolute;
+                bottom: 22px;
+                background-color: @orange;
+                opacity: 0.9;
+                a{
+                    color: white;
+                }
+                a:hover{
+                    text-decoration:none;
+                    color:@color_hover;
+                }
+         }
+    }
 }
 /*****************************
 			footer
@@ -337,8 +403,42 @@ footer{
 	background: @orange;
 	margin-top: 30px;
 	color: #fff;
+    margin-top:20px;
+    .footer-column{
+        margin:20px 0;
+        text-align:center;
+        p{
+            margin-bottom: 3px;
+        }
+    }
 }
 
+
+@media screen and (max-width: 2000px){
+    header .phones{
+        padding-left: 0;
+	}
+}
+@media screen and (max-width: 1091px){
+	/*
+	header, section{
+		padding-left : 25px;
+		padding-right: 25px;
+	} 
+	*/
+    .social{
+
+    }
+    .logo{
+        padding-left: 25px;
+        padding-right: 0;
+    }
+    .phones{
+        display: table !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 @media screen and (max-width: 768px){
 	/*
 	header, section{
