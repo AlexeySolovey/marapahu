@@ -117,15 +117,20 @@ header{
 		}
 	}
 	.logo{
+        width: 254px;
         margin-left: 45px;
         display: table;
         margin-right: auto;
         padding-right: 30px;
+        img{
+            width: 100%;
+        }
 	}
 	.phones{
         margin-left: 24px;
 		padding-top: 23px;
 		padding-left: 24px;
+        width: 123%;
 		P{
 			padding-left: 5px;
 			font-size: 24.65px;
@@ -371,7 +376,7 @@ section.img_block{
 			propose
 *****************************/
 section.propose{
-        margin-bottom: 30px;
+        margin-bottom: 40px;
 	h2{
 		margin:30px 0px;
 	}
@@ -455,17 +460,18 @@ section.propose{
 *****************************/
 footer{
 	background: @orange;
-	margin-top: 30px;
 	color: #fff;
-    /*margin-top:20px;*/
     .footer-column{
         margin:20px 0;
         text-align:center;
         p{
             margin-bottom: 10px;
         }
+        .footer-first-b{
+             display: inline-block;
+             margin-bottom: 10px;
+        }
         ul{
-            width: 100%;
             display: inline-block;
             li{
                 width: 100%;
@@ -481,6 +487,9 @@ footer{
                     margin-right: 8px;
                     font-size: 18px;
                     color: @orange;
+                }
+                i:hover{
+                    color:@color_hover;
                 }
                 p{
                     float:right;
@@ -505,11 +514,17 @@ footer{
     .footer-social{
         padding-top: 16px;
         ul{
-            padding-left: 41%;
+            margin-left: 10px;
             padding-top: 10px;
             a{
                 display:inline-block;
                 float:left;
+                li{
+                    i{
+                        padding-left: 0px;
+                            font-size: 16px;
+                    }
+                }
             }
         }
     }
@@ -533,6 +548,7 @@ footer{
         img{
             width: 100%;
             margin-bottom:15px;
+            max-width: 290px;
         }
         span{
             font-size: 16px;
@@ -566,7 +582,13 @@ footer{
                     color:white;
                 }
                 .icon-fb{
-                    padding: 9px 10px 6px 17px;
+                    padding: 9px 13px 6px 13px;
+                }
+                .icon-vk{
+                    padding: 9px 8px 6px 8px;
+                }
+                .icon-tw{
+                    padding: 9px 9px 6px 9px;
                 }
             }
         }
@@ -614,6 +636,12 @@ aside{
     header .phones{
         margin-left: 5px;
     }
+
+}
+@media screen and (max-width: 1208px){
+    footer .footer-column ul li .fa-email{
+        margin-left: 27px;
+    }
 }
 @media screen and (max-width: 1091px){
 	/*
@@ -630,6 +658,10 @@ aside{
         display: table !important;
         margin-left: auto;
         margin-right: auto;
+        width:auto;
+    }
+        footer .footer-column ul li .fa-email{
+        margin-left: 29px;
     }
 }
 
@@ -644,7 +676,8 @@ aside{
     padding-right: 0;
     }
     header .phones {
-    margin-left: auto; 
+        margin-left: auto; 
+        width:auto;
     }
 
 
@@ -653,7 +686,7 @@ aside{
 
 				&.navbar-nav{
 					li{
-						padding:5px 15px !important;
+						padding:5px 10px !important;
                         }
                     }
                 }
@@ -662,8 +695,12 @@ aside{
     float:none;
     margin-left: 28px;
     }
-    footer .footer-social ul {
+    /*footer .footer-social ul {
     padding-left: 44%;
+    }*/
+
+    footer .footer-column ul li .fa-email{
+        margin-left: 27px;
     }
 }
 @media screen and (max-width: 768px){
@@ -673,9 +710,9 @@ aside{
 		padding-right: 25px;
 	} 
 	*/
-        footer .footer-social ul {
+        /*footer .footer-social ul {
     padding-left: 42%;
-    }
+    }*/
 }
 @media screen and (min-width: 768px){
 	

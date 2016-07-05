@@ -121,15 +121,20 @@ header .social button:hover {
   color: #d7d7d7;
 }
 header .logo {
+  width: 254px;
   margin-left: 45px;
   display: table;
   margin-right: auto;
   padding-right: 30px;
 }
+header .logo img {
+  width: 100%;
+}
 header .phones {
   margin-left: 24px;
   padding-top: 23px;
   padding-left: 24px;
+  width: 123%;
 }
 header .phones P {
   padding-left: 5px;
@@ -362,7 +367,7 @@ section.img_block .info_block button:hover {
 			propose
 *****************************/
 section.propose {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 section.propose h2 {
   margin: 30px 0px;
@@ -442,9 +447,7 @@ section.propose .slide img {
 *****************************/
 footer {
   background: #ff6501;
-  margin-top: 30px;
   color: #fff;
-  /*margin-top:20px;*/
 }
 footer .footer-column {
   margin: 20px 0;
@@ -453,8 +456,11 @@ footer .footer-column {
 footer .footer-column p {
   margin-bottom: 10px;
 }
+footer .footer-column .footer-first-b {
+  display: inline-block;
+  margin-bottom: 10px;
+}
 footer .footer-column ul {
-  width: 100%;
   display: inline-block;
 }
 footer .footer-column ul li {
@@ -472,6 +478,9 @@ footer .footer-column ul li i {
   margin-right: 8px;
   font-size: 18px;
   color: #ff6501;
+}
+footer .footer-column ul li i:hover {
+  color: #d7d7d7;
 }
 footer .footer-column ul li p {
   float: right;
@@ -494,12 +503,16 @@ footer .footer-social {
   padding-top: 16px;
 }
 footer .footer-social ul {
-  padding-left: 41%;
+  margin-left: 10px;
   padding-top: 10px;
 }
 footer .footer-social ul a {
   display: inline-block;
   float: left;
+}
+footer .footer-social ul a li i {
+  padding-left: 0px;
+  font-size: 16px;
 }
 /*****************************
 *****************************/
@@ -519,6 +532,7 @@ footer .footer-social ul a {
 .contacts-profile img {
   width: 100%;
   margin-bottom: 15px;
+  max-width: 290px;
 }
 .contacts-profile span {
   font-size: 16px;
@@ -554,7 +568,13 @@ footer .footer-social ul a {
   color: white;
 }
 .contacts-profile ul li .icon-fb {
-  padding: 9px 10px 6px 17px;
+  padding: 9px 13px 6px 13px;
+}
+.contacts-profile ul li .icon-vk {
+  padding: 9px 8px 6px 8px;
+}
+.contacts-profile ul li .icon-tw {
+  padding: 9px 9px 6px 9px;
 }
 .contacts-container {
   padding-bottom: 40px;
@@ -589,6 +609,11 @@ aside .contacts-aside {
     margin-left: 5px;
   }
 }
+@media screen and (max-width: 1208px) {
+  footer .footer-column ul li .fa-email {
+    margin-left: 27px;
+  }
+}
 @media screen and (max-width: 1091px) {
   /*
 	header, section{
@@ -600,6 +625,10 @@ aside .contacts-aside {
     display: table !important;
     margin-left: auto;
     margin-right: auto;
+    width: auto;
+  }
+  footer .footer-column ul li .fa-email {
+    margin-left: 29px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -614,16 +643,20 @@ aside .contacts-aside {
   }
   header .phones {
     margin-left: auto;
+    width: auto;
   }
   #responsive-menu ul.navbar-nav li {
-    padding: 5px 15px !important;
+    padding: 5px 10px !important;
   }
   footer .footer-column ul li .fa-email {
     float: none;
     margin-left: 28px;
   }
-  footer .footer-social ul {
+  /*footer .footer-social ul {
     padding-left: 44%;
+    }*/
+  footer .footer-column ul li .fa-email {
+    margin-left: 27px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -633,7 +666,7 @@ aside .contacts-aside {
 		padding-right: 25px;
 	} 
 	*/
-  footer .footer-social ul {
+  /*footer .footer-social ul {
     padding-left: 42%;
-  }
+    }*/
 }
