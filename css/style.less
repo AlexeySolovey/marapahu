@@ -2,6 +2,12 @@
 @color_hover: #d7d7d7;
 @FGM-regular: Franklin Gothic Medium Regular;
 @some: OpenSans-BoldItalic;
+
+/*for page "Contacts"*/
+@light-gray:#F3F3F3;
+
+/*-------------------*/
+
 /*****************************
 			fonts
 *****************************/
@@ -50,8 +56,8 @@ header{
         display: table;
         margin-left: auto;
         margin-right: auto;
-		/*margin-left: 39px;*/
 		padding-top: 31px;
+        margin-left: 40px;
 		p{
 			font-family: @FGM-regular;
 			text-transform: uppercase;
@@ -111,15 +117,20 @@ header{
 		}
 	}
 	.logo{
-		/*margin-left: 44px;*/
+        width: 254px;
+        margin-left: 45px;
         display: table;
-        margin-left: auto;
         margin-right: auto;
         padding-right: 30px;
+        img{
+            width: 100%;
+        }
 	}
 	.phones{
+        margin-left: 24px;
 		padding-top: 23px;
 		padding-left: 24px;
+        width: 123%;
 		P{
 			padding-left: 5px;
 			font-size: 24.65px;
@@ -365,66 +376,102 @@ section.img_block{
 			propose
 *****************************/
 section.propose{
-    h2{
-        margin:30px 0px;
-    }
-    .tour{
-         padding: 1px;
-         text-align: center;
-         border:1px solid @orange;
-         margin-bottom:20px;
-         cursor:pointer;
-         img{
-             width:100%;
-         }
-         h3{
-            margin: 10px 0 5px 0;
-         }
-         .tour-info{
-            padding: 0px 70px;
-            
-         }
-         .order{
-                 padding: 32px 103px;
-                font-size: 26px;
-                display: none;
-                position: absolute;
-                bottom: 22px;
-                background-color: @orange;
-                opacity: 0.9;
-                a{
-                    color: white;
-                }
-                a:hover{
-                    text-decoration:none;
-                    color:@color_hover;
-                }
-         }
-    }
+        margin-bottom: 40px;
+	h2{
+		margin:30px 0px;
+	}
+	.slide{
+		 padding: 1px;
+		 text-align: center;
+		 border:1px solid @orange;
+		 margin-bottom:20px;
+		 cursor:pointer;
+		 height: 225px;
+		 overflow: hidden;
+		 &:hover .order{
+            -webkit-transform: translateY(-120px);
+            -moz-transform: translateY(-120px);
+            -o-transform: translateY(-120px);
+             transform: translateY(-120px);
+		 }
+		 .info_block{
+			position: relative;
+			button{
+				color: #fff;
+				background: @orange;
+				border: 0;
+				margin-top: 10px;
+				padding: 4px 30px;
+				font-size: 17px;
+				&:hover{
+					color:@color_hover;
+				}
+			}
+			h3{
+				margin-top: 0;
+				padding: 20px 0 5px 0;
+			}
+			p{
+				margin-bottom: 0;
+				padding-bottom: 20px;
+			}
+			.tour-info{
+				
+			}
+			.order{
+				padding: 32px 0;
+				font-size: 26px;
+				position: absolute;
+				z-index: 10;
+				bottom: 0;
+				background-color: @orange;
+				opacity: 0.9;
+				width: 100%;
+				height: 100%;
+				top: 120px;
+				-webkit-transition: -webkit-transform 600ms;
+				-moz-transition: -webkit-transform 600ms;
+				-o-transition: -webkit-transform 600ms;
+				transition: -webkit-transform 600ms;
+				a{
+					color: white;
+					&:hover{
+						text-decoration:none;
+						color:@color_hover;
+					}
+				}
+			}
+		 }
+		 img{
+			 width:100%;
+		 }
+		
+	}
 }
 .bx-wrapper{
-    border:none;
-    .bx-viewport{
-        border:none;
-        height: 240px;
-    }
+	border:none;
+	.bx-viewport{
+		border:none;
+		height: 240px;
+	}
 }
 /*****************************
 			footer
 *****************************/
 footer{
 	background: @orange;
-	margin-top: 30px;
 	color: #fff;
-    margin-top:20px;
     .footer-column{
         margin:20px 0;
         text-align:center;
         p{
-            margin-bottom: 3px;
+            margin-bottom: 10px;
+        }
+        .footer-first-b{
+             display: inline-block;
+             margin-bottom: 10px;
         }
         ul{
-            width: 100%;
             display: inline-block;
             li{
                 width: 100%;
@@ -441,6 +488,9 @@ footer{
                     font-size: 18px;
                     color: @orange;
                 }
+                i:hover{
+                    color:@color_hover;
+                }
                 p{
                     float:right;
                 }
@@ -450,11 +500,30 @@ footer{
                     font-size: 22px;
                 }
                 .fa-email{
-                    font-size: 16px;
+                    float: left;
+                    padding-top: 0;
+                    font-size: 22px;
                     padding-right: 1px;
-                    margin-left: 17px;
+                    margin-left: 35px;
                     background-color:transparent;
                     color:white;
+                }
+            }
+        }
+    }
+    .footer-social{
+        padding-top: 16px;
+        ul{
+            margin-left: 10px;
+            padding-top: 10px;
+            a{
+                display:inline-block;
+                float:left;
+                li{
+                    i{
+                        padding-left: 0px;
+                            font-size: 16px;
+                    }
                 }
             }
         }
@@ -462,10 +531,117 @@ footer{
 }
 
 
+/*****************************
+*****************************/
+/*****************************
+		Page - Contacts
+*****************************/
+/*****************************
+*****************************/
+.contacts-container-bottom{
+    background-color:@light-gray;
+    padding:3px 0 30px 0;
+}
+  .contacts-profile{
+      margin-top: 20px;
+      text-align: center;
+        img{
+            width: 100%;
+            margin-bottom:15px;
+            max-width: 290px;
+        }
+        span{
+            font-size: 16px;
+        }
+        ul{
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 18px;
+            margin-top:15px;
+            li{
+                float: left;
+                margin-bottom:10px;
+                i{
+                    font-size: 22px;
+                }
+                a{
+                    text-decoration:none;
+                    color:black;
+                }
+                a:hover{
+                    color:@color_hover;
+                }
+                .contacts-icon{
+                    float: left;
+                    margin-right:10px;
+                    border-radius: 20px;
+                    display: inline-block;
+                    padding: 9px 7px 6px 9px;
+                    background-color: @orange;
+                    color:white;
+                }
+                .icon-fb{
+                    padding: 9px 13px 6px 13px;
+                }
+                .icon-vk{
+                    padding: 9px 8px 6px 8px;
+                }
+                .icon-tw{
+                    padding: 9px 9px 6px 9px;
+                }
+            }
+        }
+
+    }
+.contacts-container{
+    padding-bottom:40px;
+}
+.contacts-map{
+    display:inline-block;
+}
+.test{
+    height:400px;
+    border:1px solid;
+}
+.contacts-about{
+
+    ul{
+        margin-top:20px;
+        padding-left:30px;
+        li{
+            list-style:circle;
+        }
+    }
+}
+aside{
+    header{
+        h4{
+            margin-bottom: 0;
+        }
+    }
+    .contacts-aside{
+        margin-bottom: 16px;
+    }
+}
+
+
+/*****************************
+*****************************/
+
 @media screen and (max-width: 2000px){
     header .phones{
         padding-left: 0;
 	}
+    header .phones{
+        margin-left: 5px;
+    }
+
+}
+@media screen and (max-width: 1208px){
+    footer .footer-column ul li .fa-email{
+        margin-left: 27px;
+    }
 }
 @media screen and (max-width: 1091px){
 	/*
@@ -477,14 +653,54 @@ footer{
     .social{
 
     }
-    .logo{
-        padding-left: 25px;
-        padding-right: 0;
-    }
+
     .phones{
         display: table !important;
         margin-left: auto;
         margin-right: auto;
+        width:auto;
+    }
+        footer .footer-column ul li .fa-email{
+        margin-left: 29px;
+    }
+}
+
+@media screen and (max-width: 991px){
+	header .social{
+       margin-left: auto;
+	}
+    header .logo {
+    margin-left: auto;
+    display: table;
+    margin-right: auto;
+    padding-right: 0;
+    }
+    header .phones {
+        margin-left: auto; 
+        width:auto;
+    }
+
+
+		#responsive-menu{
+			ul{
+
+				&.navbar-nav{
+					li{
+						padding:5px 10px !important;
+                        }
+                    }
+                }
+            }
+    footer .footer-column ul li .fa-email {
+    float:none;
+    margin-left: 28px;
+    }
+    /*footer .footer-social ul {
+    padding-left: 44%;
+    }*/
+
+    footer .footer-column ul li .fa-email{
+        margin-left: 27px;
     }
 }
 @media screen and (max-width: 768px){
@@ -494,6 +710,9 @@ footer{
 		padding-right: 25px;
 	} 
 	*/
+        /*footer .footer-social ul {
+    padding-left: 42%;
+    }*/
 }
 @media screen and (min-width: 768px){
 	

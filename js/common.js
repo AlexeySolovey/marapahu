@@ -7,7 +7,7 @@
 		    controls: false,
 		    pager: false,
 		    slideWidth: 300,
-		    minSlides: 2,
+		    minSlides: 1,
 		    maxSlides: 3,
 		    moveSlides: 1,
 		    slideMargin: 10
