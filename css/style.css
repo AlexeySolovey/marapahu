@@ -178,6 +178,9 @@ section.navigation .navbar {
 section.navigation .navbar .navbar-header button {
   border: 2px solid white !important;
 }
+section.navigation .navbar .navbar-header button .icon-bar {
+  background-color: #fff !important;
+}
 section.navigation .navbar #responsive-menu ul {
   list-style-type: none;
   text-align: center;
@@ -618,12 +621,6 @@ aside .contacts-aside {
   }
 }
 @media screen and (max-width: 1091px) {
-  /*
-	header, section{
-		padding-left : 25px;
-		padding-right: 25px;
-	} 
-	*/
   .phones {
     display: table !important;
     margin-left: auto;
@@ -655,9 +652,6 @@ aside .contacts-aside {
     float: none;
     margin-left: 28px;
   }
-  /*footer .footer-social ul {
-    padding-left: 44%;
-    }*/
   footer .footer-column ul li .fa-email {
     margin-left: 27px;
   }
@@ -667,9 +661,12 @@ aside .contacts-aside {
     width: 166px;
   }
   section.img_block .info_block {
-    width: 333px;
+    width: 226px;
   }
   .info-text {
+    display: none;
+  }
+  .carousel {
     display: none;
   }
 }
