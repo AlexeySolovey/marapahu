@@ -65,19 +65,19 @@
                             </div>
                         </li>
                         <li>
-                            <a href="#">Поиск туров</a>
+                            <a href="findTours.php">Поиск туров</a>
                             <div class="jaw">
                                 <div></div>
                             </div>
                         </li>
                         <li>
-                            <a href="#">Горячие туры</a>
+                            <a href="hotTours.php">Горячие туры</a>
                             <div class="jaw">
                                 <div></div>
                             </div>
                         </li>
                         <li>
-                            <a href="#">Новости</a>
+                            <a href="news.php">Новости</a>
                             <div class="jaw">
                                 <div></div>
                             </div>

@@ -29,7 +29,10 @@
     <section>
         <div class="row">
             <div class="col-md-12">
-                <div style="height: 1000px;"></div>
+                <div class="twocolumn">
+                    <div id="tour_search_module"></div>
+                    <script src="http://module.ittour.com.ua/tour_search.jsx?id=598576D1034496G10N60852&ver=1&type=2970"></script>
+                </div>
             </div>
         </div>
     </section>
@@ -60,6 +63,9 @@
                             </div>
                         </div>
                     </div>
+                   
+                    
+                    
                 </div>
             </div>
         </div>
