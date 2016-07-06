@@ -853,109 +853,24 @@ footer{
 .review-block{
     border:2px solid @orange;
     margin:25px 0;
-    margin-top: 25px;
+    margin: 25px 0;
     border-radius: 25px;
     display: inline-block;
-    padding: 35px 200px 20px 50px;
+    padding: 35px 30px;
     .review-img{
-    width: 18%;
-    height: 166px;
-    float: right;
-    position: absolute;
-    right: 31px;
-    top: 41px;
+        width: 19%;
+        height: 162px;
+            float: right;
+        position: absolute;
+        right: 32px;
+        top: 64px;
     }
     .review-text{
-        font-family: 'marta_italic';
+        width: 80%;
         float: left;
-        margin-bottom: 15px;
-    }
-    .review-author{
-        font-family: 'marta_italic';
-        display: inline-block;
-        color: orange;
-        span{
-            color:black;
-        }
     }
 }
-.review-send-general{
-    hr{
-        color:@orange;
-        width:100%;
-    }
-}
-.review-send-block{
-    display:inline-block;
-    border:2px solid @orange;
-    margin-bottom:25px;
-    border-radius:25px;
-    width:100%;
 
-    header{
-        background-color:@orange;
-        border-radius:22px 22px 0 0;
-        color:white;
-        text-align: center;
-        vertical-align: middle;
-        font-family: 'GOTHICB';
-        padding-bottom:15px;
-        span{
-            &:first-child{
-                font-size:21px;
-            }
-              &:last-child{
-                font-size:14px;
-            }
-        }
-    }
-    article{
-        display: inline-block;
-        padding: 25px;
-        input{
-            font-family: '7fonts.ru_CaviarDreams';
-            color:@orange;
-            border: 1px solid @orange;
-            width: 100%;
-            margin-bottom: 12px;
-            box-shadow: 0 0 2px 0 #ff6501;
-            font-size: 12px;
-            padding: 4px 10px;
-        }
-        textarea{
-            font-family: '7fonts.ru_CaviarDreams';
-            color:@orange;
-            border: 1px solid @orange;
-            width: 100%;
-            box-shadow: 0 0 2px 0 #ff6501;
-            font-size: 12px;
-            padding: 4px 10px;
-            height: 195px;
-        }
-        img{
-            display: table;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        span{
-            display: table;
-            margin-left: auto;
-            margin-right: auto;
-            color:@orange;
-            font-family: 'GOTHICB';
-            margin-bottom: 20px;
-        }
-        .btn{
-            width: 45%;
-            border-radius: 8px;
-            display: table;
-            margin-right: auto;
-            margin-left: auto;
-            color: white;
-            background-color: @orange;
-        }
-    }
-}
 
 /*****************************
 *****************************/
@@ -1125,11 +1040,7 @@ aside{
     footer .footer-column ul li .fa-email{
         margin-left: 27px;
     }
-    .review-send-block{
-        article{
-          padding: 25px 40px 25px 10px; 
-        }
-    }
+
 }
 @media screen and (max-width: 767px){
     #responsive-menu{
