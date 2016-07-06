@@ -89,7 +89,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="#">Отзывы</a>
+                            <a href="reviews.php">Отзывы</a>
                             <div class="jaw">
                                 <div></div>
                             </div>
