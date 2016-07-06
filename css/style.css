@@ -471,14 +471,6 @@ section.propose .slide img {
   width: 100%;
   margin-bottom: 35px;
 }
-.news-block .finland {
-  background: url("http://www.piligrim-m.com.ua/sites/default/files/Finlandia-Levi.jpg") no-repeat bottom center;
-  background-size: cover;
-}
-.news-block .egypt {
-  background: url("http://www.krajpiramid.pl/wp-content/uploads/2013/07/egipt-ogolne-2.jpg") no-repeat bottom center;
-  background-size: cover;
-}
 .news-block .news-img {
   width: 100%;
   height: 220px;
@@ -487,74 +479,110 @@ section.propose .slide img {
 .news-block a {
   color: #FADA31;
 }
-.pagination {
-  display: table;
-  margin: 20px auto;
-}
-.pagination li {
-  /*a{
-            position: relative;
-            width: 54px;
-            border-width: 50px 18px 0;
-            border-style: solid;
-            border-color: red transparent;
-        }
-        a:before{
-            content: "";
-    position: absolute;
-    height: 0;
-    width: 0;
-    top: -85px;
-    left: -18px;
-    border-width: 0 45px 35px;
-    border-style: solid;
-    border-color: transparent transparent red;
-        }*/
-}
-#pentagon {
-  width: 54px;
-  position: relative;
-  border-width: 50px 18px 0;
-  border-style: solid;
-  border-color: #277bab transparent;
-}
-#pentagon:before {
-  content: "";
-  height: 0;
-  width: 0;
-  position: absolute;
-  top: -85px;
-  left: -18px;
-  border-width: 0 45px 35px;
-  border-style: solid;
-  border-color: transparent transparent #277bab;
-}
-.pentahedron {
-  width: 7em;
-  height: 7em;
-  overflow: hidden;
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  margin: .7em;
-}
-.pentahedron:before {
-  border-width: 0 3.5em 3.5em;
-}
-.pentahedron:before,
-.pentahedron:after {
-  position: absolute;
-  border-style: solid;
-  border-color: orangered transparent;
-  content: "";
-  display: block;
-}
-.pentahedron:after {
-  top: 3.4em;
-  border-width: 9em 3.5em 0;
-}
 hr {
   width: 84%;
+}
+.news-nav {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+.news-nav ul {
+  display: inline-block;
+}
+.news-nav ul li {
+  float: left;
+  margin-right: 4px;
+}
+.news-nav ul li a {
+  background-color: white;
+  color: #ff6501;
+  padding: 3px 9px;
+  margin-right: 3px;
+  border-radius: 30px;
+  display: block;
+  border: 1px solid;
+  text-decoration: none;
+}
+.news-nav ul li a:active {
+  background-color: #ff6501;
+  color: white;
+}
+.news-nav ul li .active {
+  border: 1px solid #ff6501;
+  background-color: #ff6501;
+  color: white;
+}
+.news-nav ul li .last {
+  font-size: 11px;
+  padding: 5px 8px 5px 9px;
+}
+/*****************************
+		open-news
+*****************************/
+.news-open-general {
+  padding: 15px 100px;
+}
+.news-open-general img {
+  width: 100%;
+}
+.news-open-general nav a {
+  display: inline-block;
+  padding: 10px 70px;
+  text-decoration: none;
+  background-color: #ff6501;
+  color: white;
+  position: relative;
+  bottom: 20px;
+}
+.news-open-general nav a i {
+  margin-right: 5px;
+}
+.news-open-general article {
+  line-height: 25px;
+}
+.triangle {
+  content: '';
+  position: absolute;
+  left: 214px;
+  bottom: 0px;
+  border: 20px solid transparent;
+  border-left: 12px solid #ff6501;
+}
+.open-news-nav {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+.open-news-nav ul {
+  display: inline-block;
+}
+.open-news-nav ul li {
+  float: left;
+  margin: 25px 28px 12px 28px;
+}
+.open-news-nav ul li a {
+  background-color: white;
+  color: #ff6501;
+  padding: 2px 11px;
+  margin-right: 3px;
+  border-radius: 30px;
+  display: block;
+  border: 1px solid;
+  text-decoration: none;
+}
+.open-news-nav ul li a i {
+  font-size: 11px;
+  margin: 0 5px;
+}
+.open-news-nav ul li a:active {
+  background-color: #ff6501;
+  color: white;
+}
+.open-news-nav ul li .active {
+  border: 1px solid #ff6501;
+  background-color: #ff6501;
+  color: white;
 }
 /*****************************
 		hot-rours
@@ -879,6 +907,9 @@ aside .contacts-aside {
   .message-text {
     width: 100% !important;
   }
+  .news-open-general {
+    padding: 15px 0;
+  }
 }
 @media screen and (max-width: 991px) {
   header .social {
@@ -920,5 +951,10 @@ aside .contacts-aside {
   }
   section.hot-tours .info_block {
     width: 275px;
+  }
+}
+@media screen and (max-width: 571px) {
+  .open-news-nav ul li {
+    float: none !important;
   }
 }

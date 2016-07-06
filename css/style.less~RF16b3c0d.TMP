@@ -523,7 +523,6 @@ hr{
                 color:white;
             }
             .active{
-                 border: 1px solid @orange;
                 background-color:@orange;
                 color:white;
             }
@@ -541,71 +540,19 @@ hr{
 .news-open-general{
     padding: 15px 100px;
     img{
-        width:100%;
+        width:90%;
     }
     nav{
         a{
             display: inline-block;
-            padding: 10px 70px;
+            padding: 10px 60px;
             text-decoration:none;
             background-color:@orange;
             color:white;
-            position:relative;
-            bottom:20px;
-            i{
-                margin-right:5px;
-            }
-        }
-    }
-    article{
-       line-height: 25px;
-    }
-}
-
-.triangle {
-    content: '';
-    position: absolute;
-    left: 214px;
-    bottom: 0px;
-    border: 20px solid transparent;
-    border-left: 12px solid @orange
-   }
-
-.open-news-nav{
-    display:table;
-    margin-left:auto;
-    margin-right:auto;
-     ul{
-        display:inline-block;
-        li{
-           float: left;
-            margin: 25px 28px 12px 28px;
-            a{
-                background-color:white;
-                color:@orange;
-                padding: 2px 11px;
-                margin-right: 3px;
-                border-radius: 30px;
-                display: block;
-                border: 1px solid;
-                text-decoration:none;
-                i{
-                    font-size: 11px;
-                    margin: 0 5px;
-                }
-            }
-            a:active{
-                background-color:@orange;
-                color:white;
-            }
-            .active{
-                 border: 1px solid @orange;
-                background-color:@orange;
-                color:white;
-            }
         }
     }
 }
+
 
 /*****************************
 		hot-rours
@@ -946,9 +893,6 @@ aside{
     .message-text{
         width: 100% !important;
      }
-    .news-open-general{
-        padding: 15px 0;
-    }
 }
 @media screen and (max-width: 991px){
 	header .social{
@@ -1002,15 +946,10 @@ aside{
         width: 275px;
     }
 }
-@media screen and (max-width: 571px){
-        .open-news-nav ul li {
-       float:none !important; 
-    }
-}
 @media screen and (min-width: 768px){
 	
 }
 
 @media screen and (min-width: 992px){
-
+	
 }
