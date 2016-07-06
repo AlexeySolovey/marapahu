@@ -1,4 +1,5 @@
 @orange: #ff6501;
+@yellow:#FADA31;
 @color_hover: #d7d7d7;
 @FGM-regular: Franklin Gothic Medium Regular;
 @some: OpenSans-BoldItalic;
@@ -173,7 +174,10 @@ section.navigation{
 		margin-bottom: 0;
 		.navbar-header{
             button{
-                    border: 2px solid white !important;
+               border: 2px solid white !important;
+               .icon-bar{
+                   background-color: #fff !important;
+               }
             }
 		}
 		#responsive-menu{
@@ -459,6 +463,249 @@ section.propose{
 		height: 240px;
 	}
 }
+
+/*****************************
+			news
+*****************************/
+.left{
+   padding: 25px 0 0 80px;
+}
+.right{
+    padding: 25px 80px 0 0;
+}
+.news-block{
+    margin-bottom: 15px;
+    article{
+       margin-bottom: 12px;
+       height: 65px;
+        text-overflow: ellipsis;
+        line-height: 22px;
+        overflow: hidden;
+    }
+    img{
+        width:100%;
+        margin-bottom: 35px;
+    }
+    .finland{
+        background:url("http://www.piligrim-m.com.ua/sites/default/files/Finlandia-Levi.jpg") no-repeat bottom center;
+        background-size:cover;
+    }
+    .egypt{
+         background:url("http://www.krajpiramid.pl/wp-content/uploads/2013/07/egipt-ogolne-2.jpg") no-repeat bottom center;
+        background-size:cover;
+    }
+    .news-img{
+        width:100%;
+        height:220px;
+        margin-bottom: 35px;
+    }
+    a{
+        color:@yellow;
+    }
+}
+.pagination{
+    display: table;
+    margin: 20px auto;
+    li{
+        /*a{
+            position: relative;
+            width: 54px;
+            border-width: 50px 18px 0;
+            border-style: solid;
+            border-color: red transparent;
+        }
+        a:before{
+            content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -85px;
+    left: -18px;
+    border-width: 0 45px 35px;
+    border-style: solid;
+    border-color: transparent transparent red;
+        }*/
+    }
+}
+#pentagon {
+    width: 54px;
+    position: relative;
+    border-width: 50px 18px 0;
+    border-style: solid;
+    border-color: #277bab transparent;
+}
+
+#pentagon:before {
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: -85px;
+    left: -18px;
+    border-width: 0 45px 35px;
+    border-style: solid;
+    border-color: transparent transparent #277bab;
+}
+
+.pentahedron {
+        width: 7em;
+    height: 7em;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: .7em;
+}
+.pentahedron:before {
+    border-width: 0 3.5em 3.5em;
+}
+.pentahedron:before, .pentahedron:after {
+    position: absolute;
+    border-style: solid;
+    border-color: orangered transparent;
+    content: "";
+    display: block;
+}
+.pentahedron:after {
+    top: 3.4em;
+    border-width: 9em 3.5em 0;
+}
+hr{
+    width: 84%;
+}
+
+
+
+/*****************************
+		hot-rours
+*****************************/
+section.hot-tours{
+	background: url(/images/sea.jpg) no-repeat bottom center;
+    background-size:cover;
+	color: #fff;
+    /*margin-top:20px;*/
+    /*border-top:2px solid @orange;
+    border-bottom:2px solid @orange;*/
+	.info_block{
+		background: rgba(0,0,0,.3);
+		padding: 25px 50px;
+        margin: 45px 0;
+		text-align: left;
+		width: 433px;
+		border-radius: 28px;
+		p{
+			font-size: 32px;
+			&:first-child{
+				font-size:40px;
+				margin-bottom: 1px;
+			}
+		}
+		button{
+			background: @orange;
+			border: 0;
+			margin-top: 10px;
+			padding: 4px 12px;
+			font-size: 17px;
+			&:hover{
+				color:@color_hover;
+			}
+		}
+	}
+}
+section.hot-tours-bottom{
+    background: url(../images/img_block.jpg) no-repeat center;
+    background-color:@orange;
+    border:1px solid white;
+    background-size:cover;
+	color: #fff;
+    /*margin-top:20px;*/
+    /*border-top:2px solid @orange;
+    border-bottom:2px solid @orange;*/
+	.info_block{
+		background: rgba(0,0,0,.3);
+		padding: 25px 50px;
+        margin: 45px 0;
+		text-align: left;
+		width: 433px;
+		border-radius: 28px;
+		p{
+			font-size: 32px;
+			&:first-child{
+				font-size:40px;
+				margin-bottom: 1px;
+			}
+		}
+		button{
+			background: @orange;
+			border: 0;
+			margin-top: 10px;
+			padding: 4px 12px;
+			font-size: 17px;
+			&:hover{
+				color:@color_hover;
+			}
+		}
+	}
+}
+.twocolumn{
+    display:table;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
+}
+.empty{
+    height:500px;
+}
+.send-message{
+    background-color:@orange;
+    .message-form{
+        display:table;
+        margin-left:auto;
+        margin-right:auto;
+        padding: 0 15px 60px 15px;
+        header{
+            font-size: 16px;
+            color:white;
+            padding-bottom: 15px;
+            padding-top: 15px;
+        }
+        .message-inputs{
+            float:left;
+            margin-right:8px;
+            width: 100%;
+            input{
+                font-size: 12px;
+                padding: 8px 10px 8px 10px;
+                width: 100%;
+                margin-bottom:8px;
+            }
+        }
+        .message-text{
+            display:inline-block;
+            width: 95%;
+            textarea{
+                width: 100%;
+                padding: 8px 10px 8px 10px;
+                height: 126px;
+            }
+        }
+            button{
+                margin-right: auto;
+                margin-left: auto;
+                background-color: #ff6501;
+                border: 1px solid white;
+                color: white;
+                display: table;
+                font-size: 12px;
+                padding: 5px 40px;
+                margin-top: 25px;
+            }
+            button:hover{
+                color:@color_hover;
+            }
+    }
+}
+
 /*****************************
 			footer
 *****************************/
@@ -640,7 +887,6 @@ aside{
     header .phones{
         margin-left: 5px;
     }
-
 }
 @media screen and (max-width: 1208px){
     footer .footer-column ul li .fa-email{
@@ -648,16 +894,6 @@ aside{
     }
 }
 @media screen and (max-width: 1091px){
-	/*
-	header, section{
-		padding-left : 25px;
-		padding-right: 25px;
-	} 
-	*/
-    .social{
-
-    }
-
     .phones{
         display: table !important;
         margin-left: auto;
@@ -667,8 +903,19 @@ aside{
         footer .footer-column ul li .fa-email{
         margin-left: 29px;
     }
+    .left{
+        padding: 25px 0 0 0;
+    }
+    .right{
+        padding: 25px 0 0 0;
+    }
+    hr{
+        width: 100%;
+    }
+    .message-text{
+        width: 100% !important;
+     }
 }
-
 @media screen and (max-width: 991px){
 	header .social{
        margin-left: auto;
@@ -683,25 +930,19 @@ aside{
         margin-left: auto; 
         width:auto;
     }
-
-
-		#responsive-menu{
-			ul{
-
-				&.navbar-nav{
-					li{
-						padding:5px 10px !important;
-                        }
+    #responsive-menu{
+		ul{
+		    &.navbar-nav{
+				li{
+					padding:5px 10px !important;
                     }
                 }
             }
+    }
     footer .footer-column ul li .fa-email {
     float:none;
     margin-left: 28px;
     }
-    /*footer .footer-social ul {
-    padding-left: 44%;
-    }*/
 
     footer .footer-column ul li .fa-email{
         margin-left: 27px;
@@ -709,16 +950,22 @@ aside{
 
 }
 @media screen and (max-width: 767px){
-        #responsive-menu{
-			ul{
-				    width: 166px;
-                }
-            }
+    #responsive-menu{
+	    ul{
+		    width: 166px;
+          }
+    }
     section.img_block .info_block{
-                width: 333px;
+                width: 226px;
         }
     .info-text{
         display:none;
+    }
+       .carousel{
+        display:none;
+    }
+    section.hot-tours .info_block{
+        width: 275px;
     }
 }
 @media screen and (min-width: 768px){
