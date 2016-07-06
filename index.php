@@ -12,62 +12,6 @@
 </head>
 <body>
     <?php include_once "header.php";?>
-	<section class="navigation">
-		<nav class="navbar">
-			<div class="container">
-				<div class="navbar-header">
-					<div class="col-xs-12">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
-							<span class="sr-only">Toggle navigation</span> 
-							<span class="icon-bar"></span> 
-							<span class="icon-bar"></span> 
-							<span class="icon-bar"></span>
-						</button>
-					</div>
-				</div>
-				<div class="collapse navbar-collapse" id="responsive-menu">
-					<ul class="navbar-nav">
-						<li>
-							<a href="/index.html">Главная</a>
-							<div class="jaw">
-								<div></div>
-							</div>
-						</li>
-						<li>
-							<a href="#">Поиск туров</a>
-							<div class="jaw">
-								<div></div>
-							</div>
-						</li>
-						<li>
-							<a href="#">Горячие туры</a>
-							<div class="jaw">
-								<div></div>
-							</div>
-						</li>
-						<li>
-							<a href="#">Новости</a>
-							<div class="jaw">
-								<div></div>
-							</div>
-						</li>
-						<li>
-							<a href="/contacts.html">Контакты</a>
-							<div class="jaw">
-								<div></div>
-							</div>
-						</li>
-						<li>
-							<a href="#">Отзывы</a>
-							<div class="jaw">
-								<div></div>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</section>
 	<section id="main_slider" class="carousel slide">
 		<!--идентификаторы-->
 		<ol class="carousel-indicators">
