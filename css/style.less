@@ -16,6 +16,32 @@
 @font-face {
 	font-family: Franklin Gothic Medium Regular;
 	src: url(../fonts/Franklin-Gothic-Medium-Regular.ttf);
+
+}
+/*Century Gothic Bold*/
+@font-face {
+    font-family: 'GOTHICB';
+    src: url('../fonts/GOTHICB.TTF') format('truetype');
+}
+/*Century Gothic Bold Italic*/
+@font-face {
+    font-family: 'GOTHICBI';
+    src: url('../fonts/GOTHICBI.TTF') format('truetype');
+}
+/*Marta Italc*/
+@font-face {
+    font-family: 'marta_italic';
+    src: url('../fonts/marta_italic.otf') format('opentype');
+}
+/*Caviar Dreams*/
+@font-face {
+    font-family: '7fonts.ru_CaviarDreams';
+    src: url('../fonts/7fonts.ru_CaviarDreams.ttf') format('truetype');
+}
+/*Caviar Dreams Bold*/
+@font-face {
+    font-family: '7fonts.ru_CaviarDreams_Bold';
+    src: url('../fonts/7fonts.ru_CaviarDreams_Bold.ttf') format('truetype');
 }
 /*****************************
 			main
@@ -486,14 +512,6 @@ section.propose{
         width:100%;
         margin-bottom: 35px;
     }
-    .finland{
-        background:url("http://www.piligrim-m.com.ua/sites/default/files/Finlandia-Levi.jpg") no-repeat bottom center;
-        background-size:cover;
-    }
-    .egypt{
-         background:url("http://www.krajpiramid.pl/wp-content/uploads/2013/07/egipt-ogolne-2.jpg") no-repeat bottom center;
-        background-size:cover;
-    }
     .news-img{
         width:100%;
         height:220px;
@@ -503,78 +521,117 @@ section.propose{
         color:@yellow;
     }
 }
-.pagination{
-    display: table;
-    margin: 20px auto;
-    li{
-        /*a{
-            position: relative;
-            width: 54px;
-            border-width: 50px 18px 0;
-            border-style: solid;
-            border-color: red transparent;
-        }
-        a:before{
-            content: "";
-    position: absolute;
-    height: 0;
-    width: 0;
-    top: -85px;
-    left: -18px;
-    border-width: 0 45px 35px;
-    border-style: solid;
-    border-color: transparent transparent red;
-        }*/
-    }
-}
-#pentagon {
-    width: 54px;
-    position: relative;
-    border-width: 50px 18px 0;
-    border-style: solid;
-    border-color: #277bab transparent;
-}
 
-#pentagon:before {
-    content: "";
-    height: 0;
-    width: 0;
-    position: absolute;
-    top: -85px;
-    left: -18px;
-    border-width: 0 45px 35px;
-    border-style: solid;
-    border-color: transparent transparent #277bab;
-}
-
-.pentahedron {
-        width: 7em;
-    height: 7em;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    margin: .7em;
-}
-.pentahedron:before {
-    border-width: 0 3.5em 3.5em;
-}
-.pentahedron:before, .pentahedron:after {
-    position: absolute;
-    border-style: solid;
-    border-color: orangered transparent;
-    content: "";
-    display: block;
-}
-.pentahedron:after {
-    top: 3.4em;
-    border-width: 9em 3.5em 0;
-}
 hr{
     width: 84%;
 }
+.news-nav{
+    display:table;
+    margin-left:auto;
+    margin-right:auto;
+    ul{
+        display:inline-block;
+        li{
+           float: left;
+           margin-right:4px;
+            a{
+                background-color:white;
+                color:@orange;
+                padding: 3px 9px;
+                margin-right: 3px;
+                border-radius: 30px;
+                display: block;
+                border: 1px solid;
+                text-decoration:none;
+            }
+            a:active{
+                background-color:@orange;
+                color:white;
+            }
+            .active{
+                 border: 1px solid @orange;
+                background-color:@orange;
+                color:white;
+            }
+            .last{
+                font-size: 11px;
+                padding: 5px 8px 5px 9px;
+            }
+        }
+    }
+}
 
+/*****************************
+		open-news
+*****************************/
+.news-open-general{
+    padding: 15px 100px;
+    img{
+        width:100%;
+    }
+    nav{
+        a{
+            display: inline-block;
+            padding: 10px 70px;
+            text-decoration:none;
+            background-color:@orange;
+            color:white;
+            position:relative;
+            bottom:20px;
+            i{
+                margin-right:5px;
+            }
+        }
+    }
+    article{
+       line-height: 25px;
+    }
+}
 
+.triangle {
+    content: '';
+    position: absolute;
+    left: 214px;
+    bottom: 0px;
+    border: 20px solid transparent;
+    border-left: 12px solid @orange
+   }
+
+.open-news-nav{
+    display:table;
+    margin-left:auto;
+    margin-right:auto;
+     ul{
+        display:inline-block;
+        li{
+           float: left;
+            margin: 25px 28px 12px 28px;
+            a{
+                background-color:white;
+                color:@orange;
+                padding: 2px 11px;
+                margin-right: 3px;
+                border-radius: 30px;
+                display: block;
+                border: 1px solid;
+                text-decoration:none;
+                i{
+                    font-size: 11px;
+                    margin: 0 5px;
+                }
+            }
+            a:active{
+                background-color:@orange;
+                color:white;
+            }
+            .active{
+                 border: 1px solid @orange;
+                background-color:@orange;
+                color:white;
+            }
+        }
+    }
+}
 
 /*****************************
 		hot-rours
@@ -781,6 +838,124 @@ footer{
     }
 }
 
+/*****************************
+		reciews page
+*****************************/
+.rewiews-header{
+    font-family: 'GOTHICBI' !important;
+    font-size:24px;
+    h3{
+        font-family: 'GOTHICBI' !important;
+        font-size:14px;
+        margin:0;
+    }
+}
+.review-block{
+    border:2px solid @orange;
+    margin:25px 0;
+    margin-top: 25px;
+    border-radius: 25px;
+    display: inline-block;
+    padding: 35px 200px 20px 50px;
+    .review-img{
+    width: 18%;
+    height: 166px;
+    float: right;
+    position: absolute;
+    right: 31px;
+    top: 41px;
+    }
+    .review-text{
+        font-family: 'marta_italic';
+        float: left;
+        margin-bottom: 15px;
+    }
+    .review-author{
+        font-family: 'marta_italic';
+        display: inline-block;
+        color: orange;
+        span{
+            color:black;
+        }
+    }
+}
+.review-send-general{
+    hr{
+        color:@orange;
+        width:100%;
+    }
+}
+.review-send-block{
+    display:inline-block;
+    border:2px solid @orange;
+    margin-bottom:25px;
+    border-radius:25px;
+    width:100%;
+
+    header{
+        background-color:@orange;
+        border-radius:22px 22px 0 0;
+        color:white;
+        text-align: center;
+        vertical-align: middle;
+        font-family: 'GOTHICB';
+        padding-bottom:15px;
+        span{
+            &:first-child{
+                font-size:21px;
+            }
+              &:last-child{
+                font-size:14px;
+            }
+        }
+    }
+    article{
+        display: inline-block;
+        padding: 25px;
+        input{
+            font-family: '7fonts.ru_CaviarDreams';
+            color:@orange;
+            border: 1px solid @orange;
+            width: 100%;
+            margin-bottom: 12px;
+            box-shadow: 0 0 2px 0 #ff6501;
+            font-size: 12px;
+            padding: 4px 10px;
+        }
+        textarea{
+            font-family: '7fonts.ru_CaviarDreams';
+            color:@orange;
+            border: 1px solid @orange;
+            width: 100%;
+            box-shadow: 0 0 2px 0 #ff6501;
+            font-size: 12px;
+            padding: 4px 10px;
+            height: 195px;
+        }
+        img{
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        span{
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
+            color:@orange;
+            font-family: 'GOTHICB';
+            margin-bottom: 20px;
+        }
+        .btn{
+            width: 45%;
+            border-radius: 8px;
+            display: table;
+            margin-right: auto;
+            margin-left: auto;
+            color: white;
+            background-color: @orange;
+        }
+    }
+}
 
 /*****************************
 *****************************/
@@ -915,6 +1090,9 @@ aside{
     .message-text{
         width: 100% !important;
      }
+    .news-open-general{
+        padding: 15px 0;
+    }
 }
 @media screen and (max-width: 991px){
 	header .social{
@@ -947,7 +1125,11 @@ aside{
     footer .footer-column ul li .fa-email{
         margin-left: 27px;
     }
-
+    .review-send-block{
+        article{
+          padding: 25px 40px 25px 10px; 
+        }
+    }
 }
 @media screen and (max-width: 767px){
     #responsive-menu{
@@ -968,10 +1150,15 @@ aside{
         width: 275px;
     }
 }
+@media screen and (max-width: 571px){
+        .open-news-nav ul li {
+       float:none; 
+    }
+}
 @media screen and (min-width: 768px){
 	
 }
 
 @media screen and (min-width: 992px){
-	
+
 }
