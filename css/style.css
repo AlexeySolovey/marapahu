@@ -489,35 +489,35 @@ section.propose .slide img {
 /*****************************
 			news
 *****************************/
-.left {
+.news .left {
   padding: 25px 0 0 80px;
 }
-.right {
+.news .right {
   padding: 25px 80px 0 0;
 }
-.news-block {
+.news .news-block {
   margin-bottom: 15px;
 }
-.news-block article {
+.news .news-block article {
   margin-bottom: 12px;
   height: 65px;
   text-overflow: ellipsis;
   line-height: 22px;
   overflow: hidden;
 }
-.news-block img {
+.news .news-block img {
   width: 100%;
   margin-bottom: 35px;
 }
-.news-block .news-img {
+.news .news-block .news-img {
   width: 100%;
   height: 220px;
   margin-bottom: 35px;
 }
-.news-block a {
+.news .news-block a {
   color: #FADA31;
 }
-hr {
+.news hr {
   width: 84%;
 }
 .news-nav {
@@ -1094,13 +1094,13 @@ aside .contacts-aside {
   footer .footer-column ul li .fa-email {
     margin-left: 29px;
   }
-  .left {
+  .news .left {
     padding: 25px 0 0 0;
   }
-  .right {
+  .news .right {
     padding: 25px 0 0 0;
   }
-  hr {
+  .news hr {
     width: 100%;
   }
   .message-text {
