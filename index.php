@@ -28,7 +28,7 @@
 							<div class="carousel-caption">
 								<p>Египет</p>
 								<p>Короткий фрагмент</p>
-								<button>See More</button>
+                                <button data-toggle="modal" data-target="#myModal">See More</button>
 							</div>
 						</div>
 					</div>
@@ -45,7 +45,7 @@
 							<div class="carousel-caption">
 								<p>Египет</p>
 								<p>Короткий фрагмент</p>
-								<button>See More</button>
+                                <button data-toggle="modal" data-target="#myModal">See More</button>
 							</div>
 						</div>
 					</div>
@@ -61,7 +61,7 @@
 							<div class="carousel-caption">
 								<p>Египет</p>
 								<p>Короткий фрагмент</p>
-								<button>See More</button>
+                                <button data-toggle="modal" data-target="#myModal">See More</button>
 							</div>
 						</div>
 					</div>
@@ -78,6 +78,40 @@
 		<a href="#main_slider" class="right carousel-control" data-slide="next">
 			<span class="glyphicon glyphicon-chevron-right"></span>
 		</a>
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">
+                                    <span aria-hidden="true">&times;</span>
+                                    <span class="sr-only">Закрити</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel">Напишите свои данные и наш менеджер с вами свяжется.</h4>
+                            </div>
+                            <div class="modal-body order-modal-body">
+                                <div class="modal-left pull-left">
+                                    <input placeholder="Ваше имя*" type="text" />
+                                    <br />
+                                    <input placeholder="Ваш номер*" type="tel" />
+                                </div>
+                                <div class="modal-right pull-right">
+                                    <textarea placeholder="В какой стране хотите отдохнуть"></textarea>
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <!--<button type="button" class="btn btn-default" data-dismiss="modal">Закрити</button>-->
+                                <button type="button" class="btn">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
 	</section>
 	<section class="services">
 		<div class="container">
@@ -149,7 +183,7 @@
 					<div class="info_block">
 						<p>Египет</p>
 						<p class="info-text">Короткий фрагмент</p>
-						<button>See More</button>
+                        <button data-toggle="modal" data-target="#myModal">See More</button>
 					</div>
 				</div>
 			</div>
@@ -172,7 +206,7 @@
                                 <p class="tour-info hidden-xs ">Отель Font sizen 5*7 дней 8 ночей. Вылет из Харькова на двоих 3991</p>
                                 <button>Заказать</button>
                                 <div class="order hidden-xs">
-                                    <a href="#">
+                                    <a href="#" data-toggle="modal" data-target="#myModal">
                                         <p>Заказать</p>
                                     </a>
                                 </div>
@@ -185,7 +219,7 @@
                                 <p class="tour-info hidden-xs ">Отель Font sizen 5*7 дней 8 ночей. Вылет из Харькова на двоих 3991</p>
                                 <button>Заказать</button>
                                 <div class="order hidden-xs">
-                                    <a href="#">
+                                    <a href="#" data-toggle="modal" data-target="#myModal">
                                         <p>Заказать</p>
                                     </a>
                                 </div>
@@ -198,7 +232,7 @@
                                 <p class="tour-info hidden-xs ">Отель Font sizen 5*7 дней 8 ночей. Вылет из Харькова на двоих 3991</p>
                                 <button>Заказать</button>
                                 <div class="order hidden-xs">
-                                    <a href="#">
+                                    <a href="#" data-toggle="modal" data-target="#myModal">
                                         <p>Заказать</p>
                                     </a>
                                 </div>
@@ -211,7 +245,7 @@
                                 <p class="tour-info hidden-xs ">Отель Font sizen 5*7 дней 8 ночей. Вылет из Харькова на двоих 3991</p>
                                 <button>Заказать</button>
                                 <div class="order hidden-xs">
-                                    <a href="#">
+                                    <a href="#" data-toggle="modal" data-target="#myModal">
                                         <p>Заказать</p>
                                     </a>
                                 </div>
@@ -224,7 +258,7 @@
                                 <p class="tour-info hidden-xs ">Отель Font sizen 5*7 дней 8 ночей. Вылет из Харькова на двоих 3991</p>
                                 <button>Заказать</button>
                                 <div class="order hidden-xs">
-                                    <a href="#">
+                                    <a href="#" data-toggle="modal" data-target="#myModal">
                                         <p>Заказать</p>
                                     </a>
                                 </div>

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,7 +19,7 @@
                 <section class="contacts-map">
                     <a class="dg-widget-link" href="http://2gis.ua/kharkov/firm/70000001017947248/center/36.19184017181397,49.98078481290697/zoom/15?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Харькова</a><div class="dg-widget-link"><a href="http://2gis.ua/kharkov/firm/70000001017947248/photos/70000001017947248/center/36.19184017181397,49.98078481290697/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии компании</a></div><div class="dg-widget-link"><a href="http://2gis.ua/kharkov/center/36.188286,49.984128/zoom/15/routeTab/rsType/bus/to/36.188286,49.984128╎Магарани, туристическое агентство?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Магарани, туристическое агентство</a></div>
                     <script charset="utf-8" src="http://widgets.2gis.com/js/DGWidgetLoader.js"></script>
-                    <script charset="utf-8">new DGWidgetLoader({ width: 1200, "height": 600, "borderColor": "#a3a3a3", "pos": { "lat": 49.98078481290697, "lon": 36.19184017181397, "zoom": 15 }, "opt": { "city": "kharkov" }, "org": [{ "id": "70000001017947248" }] });</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+                    <script charset="utf-8">new DGWidgetLoader({ width: 1040, "height": 600, "borderColor": "#a3a3a3", "pos": { "lat": 49.98078481290697, "lon": 36.19184017181397, "zoom": 15 }, "opt": { "city": "kharkov" }, "org": [{ "id": "70000001017947248" }] });</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
                 </section>
             </div>
         </div>

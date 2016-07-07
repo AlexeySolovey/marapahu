@@ -1,4 +1,4 @@
-/*for page "Contacts"*/
+﻿/*for page "Contacts"*/
 /*-------------------*/
 /*****************************
 			fonts
@@ -244,7 +244,7 @@ section#main_slider .carousel-inner .item {
 }
 section#main_slider .carousel-inner .item .carousel-img {
   width: 100%;
-  height: 560px;
+  height: 410px;
   background: url(../images/main_slider1.jpg) no-repeat center;
   background-size: cover;
 }
@@ -502,7 +502,7 @@ section.propose .slide img {
   margin-bottom: 35px;
 }
 .news-block a {
-  color: #fada31;
+  color: #FADA31;
 }
 hr {
   width: 84%;
@@ -629,10 +629,10 @@ section.hot-tours .info_block {
   border-radius: 28px;
 }
 section.hot-tours .info_block p {
-  font-size: 32px;
+  font-size: 22px;
 }
 section.hot-tours .info_block p:first-child {
-  font-size: 40px;
+  font-size: 32px;
   margin-bottom: 1px;
 }
 section.hot-tours .info_block button {
@@ -651,6 +651,7 @@ section.hot-tours-bottom {
   border: 1px solid white;
   background-size: cover;
   color: #fff;
+  height: 295px;
   /*margin-top:20px;*/
   /*border-top:2px solid @orange;
     border-bottom:2px solid @orange;*/
@@ -811,7 +812,7 @@ footer .footer-social ul a li i {
   font-size: 16px;
 }
 /*****************************
-		reciews page
+		reviews page
 *****************************/
 .rewiews-header {
   font-family: 'GOTHICBI' !important;
@@ -828,7 +829,7 @@ footer .footer-social ul a li i {
   margin-top: 25px;
   border-radius: 25px;
   display: inline-block;
-  padding: 35px 200px 20px 50px;
+  padding: 35px 50px 20px 50px;
 }
 .review-block .review-img {
   width: 18%;
@@ -859,17 +860,17 @@ footer .footer-social ul a li i {
   display: inline-block;
   border: 2px solid #ff6501;
   margin-bottom: 25px;
-  border-radius: 25px;
+  /*border-radius:25px;*/
   width: 100%;
 }
 .review-send-block header {
   background-color: #ff6501;
-  border-radius: 22px 22px 0 0;
+  /*border-radius:22px 22px 0 0;*/
   color: white;
   text-align: center;
   vertical-align: middle;
   font-family: 'GOTHICB';
-  padding-bottom: 15px;
+  padding: 15px 15px;
 }
 .review-send-block header span:first-child {
   font-size: 21px;
@@ -880,6 +881,7 @@ footer .footer-social ul a li i {
 .review-send-block article {
   display: inline-block;
   padding: 25px;
+  width: 100%;
 }
 .review-send-block article input {
   font-family: '7fonts.ru_CaviarDreams';
@@ -894,6 +896,7 @@ footer .footer-social ul a li i {
 .review-send-block article textarea {
   font-family: '7fonts.ru_CaviarDreams';
   color: #ff6501;
+  margin-bottom: 12px;
   border: 1px solid #ff6501;
   width: 100%;
   box-shadow: 0 0 2px 0 #ff6501;
@@ -902,9 +905,11 @@ footer .footer-social ul a li i {
   height: 195px;
 }
 .review-send-block article img {
+  max-width: 270px;
   display: table;
   margin-left: auto;
   margin-right: auto;
+  width: 78%;
 }
 .review-send-block article span {
   display: table;
@@ -915,13 +920,54 @@ footer .footer-social ul a li i {
   margin-bottom: 20px;
 }
 .review-send-block article .btn {
-  width: 45%;
-  border-radius: 8px;
+  font-size: 12px;
+  width: 160px;
+  /*border-radius: 8px;*/
   display: table;
   margin-right: auto;
   margin-left: auto;
   color: white;
   background-color: #ff6501;
+}
+/*****************************
+		Page - Contacts
+*****************************/
+.modal-content {
+  background-color: #ff6501;
+  color: white;
+}
+.order-modal-body {
+  display: inline-block;
+  width: 100%;
+  padding: 15px 20px;
+}
+.modal-left {
+  float: left;
+  width: 40%;
+}
+.modal-left input {
+  font-size: 12px;
+  padding: 8px 10px 8px 10px;
+  width: 100%;
+  margin-bottom: 7px;
+}
+.modal-right {
+  float: right;
+  width: 60%;
+  padding: 0 20px;
+}
+.modal-right textarea {
+  width: 100%;
+  height: 81px;
+  padding: 8px 10px 8px 10px;
+}
+.modal-footer button {
+  color: white;
+  border: 1px solid white;
+  background-color: #ff6501 !important;
+}
+.modal-footer button:hover {
+  color: #d7d7d7;
 }
 /*****************************
 *****************************/
@@ -931,7 +977,7 @@ footer .footer-social ul a li i {
 /*****************************
 *****************************/
 .contacts-container-bottom {
-  background-color: #f3f3f3;
+  background-color: #F3F3F3;
   padding: 3px 0 30px 0;
 }
 .contacts-profile {
@@ -1074,7 +1120,7 @@ aside .contacts-aside {
     margin-left: 27px;
   }
   .review-send-block article {
-    padding: 25px 40px 25px 10px;
+    padding: 25px 40px 25px 40px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1092,6 +1138,18 @@ aside .contacts-aside {
   }
   section.hot-tours .info_block {
     width: 275px;
+  }
+  .review-block {
+    padding: 33px 22px 20px 22px;
+  }
+  .review-send-block article .btn {
+    font-size: 11px;
+  }
+  .review-send-block article .btn {
+    width: 128px;
+  }
+  section.hot-tours .info_block p:first-child {
+    font-size: 25px;
   }
 }
 @media screen and (max-width: 571px) {

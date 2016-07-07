@@ -42,7 +42,7 @@
                                <span>дизайнер</span>
                            </div>
                        </div>
-                       <img src="http://gordonua.com/img/article/1138/10_tn.jpg" class="review-img img-circle" />
+                       <!--<img src="http://gordonua.com/img/article/1138/10_tn.jpg" class="review-img img-circle" />-->
                       
                    </article>
                     <article class="review-block">
@@ -60,8 +60,6 @@
                                 <span>дизайнер</span>
                             </div>
                         </div>
-                        <img src="http://gordonua.com/img/article/1138/10_tn.jpg" class="review-img img-circle" />
-
                     </article>
                     <article class="review-block">
                         <div class="review-content">
@@ -78,8 +76,6 @@
                                 <span>дизайнер</span>
                             </div>
                         </div>
-                        <img src="http://gordonua.com/img/article/1138/10_tn.jpg" class="review-img img-circle" />
-
                     </article>
                     <article class="review-block">
                         <div class="review-content">
@@ -96,7 +92,6 @@
                                 <span>дизайнер</span>
                             </div>
                         </div>
-                        <img src="http://gordonua.com/img/article/1138/10_tn.jpg" class="review-img img-circle" />
                     </article>
                 </div>
             </div>
@@ -106,13 +101,13 @@
 
 
     <section class="pages-navigation">
-        <nav class="news-nav">
+        <div class="news-nav">
             <ul>
                 <li><a href="#" class="active">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#" class="last"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
             </ul>
-        </nav>
+        </div>
     </section>
 
     <section class="review-send-general">
@@ -128,18 +123,18 @@
                         </header>
                         <article class="container">
                             <div class="row">
-                                <div class="col-md-8">
+                                <div class="col-md-8 col-xs-12">
                                     <input type="text" placeholder="Ваше имя" />
                                     <br />
                                     <input type="text" placeholder="Ваша проффесия" />
                                     <br />
                                     <textarea placeholder="Ваше мнение о нашей компании"></textarea>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-xs-12">
                                     <img src="images/review-girl.png" />
                                     <br />
-                                    <span>Добавьте ваше фото</span>
-                                    <button class="btn">Прикрепить файл</button>
+                                    <!--<span>Добавьте ваше фото</span>-->
+                                    <button class="btn">Добавить отзыв</button>
                                 </div>
                             </div>
                            
@@ -147,6 +142,9 @@
                     </div>
                 </div>
             </div>
+
+        
+
         </div>
     </section>
 

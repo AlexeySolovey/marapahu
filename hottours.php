@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -69,11 +69,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="info_block">
+                    <!--<div class="info_block">
                         <p>Египет</p>
                         <p class="info-text">Короткий фрагмент</p>
                         <button>See More</button>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
