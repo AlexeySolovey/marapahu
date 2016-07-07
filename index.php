@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -78,8 +78,8 @@
 		<a href="#main_slider" class="right carousel-control" data-slide="next">
 			<span class="glyphicon glyphicon-chevron-right"></span>
 		</a>
-        <div class="row">
-            <div class="col-md-12">
+        <!--<div class="row">
+            <div class="col-md-12">-->
                 <!-- Modal -->
                 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
@@ -102,15 +102,15 @@
                                 </div>
 
                             </div>
-                            <div class="modal-footer">
+                            <div class="modal-footer order-modal-footer">
                                 <!--<button type="button" class="btn btn-default" data-dismiss="modal">Закрити</button>-->
                                 <button type="button" class="btn">Отправить</button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            <!--</div>
+        </div>-->
  
 	</section>
 	<section class="services">
