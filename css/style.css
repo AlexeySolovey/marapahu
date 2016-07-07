@@ -3,6 +3,16 @@
 /*****************************
 			fonts
 *****************************/
+/*pfsquaresanspro-medium*/
+@font-face {
+  font-family: 'pfsquaresanspro-medium';
+  src: url('../fonts/new/pfsquaresanspro-medium.ttf') format('truetype');
+}
+/*pfsquaresanspro-bold*/
+@font-face {
+  font-family: 'pfsquaresanspro-bold';
+  src: url('../fonts/new/pfsquaresanspro-bold.ttf') format('truetype');
+}
 /*OPEN SANS*/
 @font-face {
   font-family: Franklin Gothic Medium Regular;
@@ -51,7 +61,7 @@ h2,
 h3,
 i,
 p {
-  font-family: Franklin Gothic Medium Regular;
+  font-family: 'pfsquaresanspro-medium';
 }
 button {
   outline: none;
